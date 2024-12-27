@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demande de réparation - Répar'Électro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Répar'Électro</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="reparation.html">Demande de réparation</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="repair-form">
+        <div class="container">
+            <h2>Demande de réparation</h2>
+            <form id="repairForm">
+                <div class="form-group">
+                    <label for="name">Nom complet :</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Téléphone :</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+
+                <div class="form-group">
+                    <label for="device">Type d'appareil :</label>
+                    <select id="device" name="device">
+                        <option value="phone">Téléphone</option>
+                        <option value="computer">Ordinateur</option>
+                        <option value="tablet">Tablette</option>
+                        <option value="other">Autre</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="brand">Marque :</label>
+                    <input type="text" id="brand" name="brand">
+                </div>
+
+                <div class="form-group">
+                    <label for="model">Modèle :</label>
+                    <input type="text" id="model" name="model">
+                </div>
+
+                <div class="form-group">
+                    <label for="description">Description du problème :</label>
+                    <textarea id="description" name="description" rows="5"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="photos">Photos (optionnel) :</label>
+                    <input type="file" id="photos" name="photos" accept="image/*" multiple>
+                </div>
+
+                <button type="submit" class="btn">Envoyer la demande</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Répar'Électro. Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
