@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Réparation Électronique</title>
+    <title>Répar'Électro</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 </head>
 <body>
     <header>
@@ -12,8 +13,8 @@
             <h1>Répar'Électro</h1>
             <nav>
                 <ul>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="reparation.html">Demande de réparation</a></li>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Accueil</a></li>
+                    <li><a href="reparation.html"><i class="fas fa-tools"></i> Demande de réparation</a></li>
                 </ul>
             </nav>
         </div>
@@ -22,12 +23,13 @@
     <section id="hero">
         <div class="container">
             <div class="hero-content">
-                <h2>Vos appareils méritent une seconde vie !</h2>
+                <h2>Vos appareils reprennent vie !</h2>
                 <p>Service de réparation rapide et fiable pour tous vos appareils électroniques.</p>
                 <a href="reparation.html" class="btn">Demander une réparation</a>
             </div>
             <div class="hero-animation">
-                </div>
+                <model-viewer src="https://cdn.glitch.global/f5575197-2572-48ca-854f-e59d44f3d87b/Ordi.glb?v=1678278893579" alt="Animation 3D" shadow-intensity="1" camera-controls auto-rotate ar ar-modes="webxr scene-viewer quick-look"  id="model3d"></model-viewer>
+            </div>
         </div>
     </section>
 
@@ -36,17 +38,17 @@
             <h2>Nos Services</h2>
             <div class="services-grid">
                 <div class="service">
-                    <img src="https://www.laptopscreen.com/blog/wp-content/uploads/2015/03/repair_500.jpg" alt="Icône Téléphone">
+                <i class="fas fa-mobile-alt fa-4x"></i> 
                     <h3>Réparation de téléphones</h3>
                     <p>Écrans cassés, problèmes de batterie, etc.</p>
                 </div>
                 <div class="service">
-                    <img src="https://www.laptopscreen.com/blog/wp-content/uploads/2015/03/repair_500.jpg" alt="Icône Ordinateur">
+                <i class="fas fa-laptop fa-4x"></i>
                     <h3>Réparation d'ordinateurs</h3>
                     <p>Dépannage, mises à niveau, récupération de données.</p>
                 </div>
                 <div class="service">
-                    <img src="https://www.laptopscreen.com/blog/wp-content/uploads/2015/03/repair_500.jpg" alt="Icône Tablette">
+                <i class="fas fa-tablet-alt fa-4x"></i>
                     <h3>Réparation de tablettes</h3>
                     <p>Réparation d'écrans, de connecteurs de charge, etc.</p>
                 </div>
@@ -57,7 +59,7 @@
     <footer>
         <p>&copy; 2023 Répar'Électro. Tous droits réservés.</p>
     </footer>
-
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
